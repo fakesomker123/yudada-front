@@ -12,7 +12,7 @@
           disabled
         >
           <div class="titleBar">
-            <img class="logo" src="../assets/gdut.png" />
+            <img class="logo" src="../assets/logo.png" />
             <div class="title">aidawn</div>
           </div>
         </a-menu-item>
