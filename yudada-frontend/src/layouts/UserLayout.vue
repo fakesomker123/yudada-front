@@ -12,7 +12,7 @@
       </a-layout-content>
       <a-layout-footer class="footer">
         <a href="https://www.code-nav.cn" target="_blank">
-          每一次的发现，都是一场与内心的奇妙邂逅
+          by 守得云开见月明
         </a>
       </a-layout-footer>
     </a-layout>

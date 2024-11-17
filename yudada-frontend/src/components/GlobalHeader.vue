@@ -12,8 +12,8 @@
           disabled
         >
           <div class="titleBar">
-            <img class="logo" src="../assets/logo.png" />
-            <div class="title">鱼答答</div>
+            <img class="logo" src="../assets/gdut.png" />
+            <div class="title">aidawn</div>
           </div>
         </a-menu-item>
         <a-menu-item v-for="item in visibleRoutes" :key="item.path">
@@ -26,7 +26,9 @@
         {{ loginUserStore.loginUser.userName ?? "无名" }}
       </div>
       <div v-else>
-        <a-button type="primary" href="/user/login">登录</a-button>
+        <a-button type="primary" href="/user/login">
+          点击登录，体验更多功能
+        </a-button>
       </div>
     </a-col>
   </a-row>
@@ -72,9 +74,13 @@ const doMenuClick = (key: string) => {
 </script>
 
 <style scoped>
-#globalHeader {
+body {
+  background-color: #f4f4f4; /* 这里选择了一个稍微深一点的灰色作为整体背景色，你可以根据喜好换别的颜色哦，比如淡蓝色 #e6f7ff 之类的 */
 }
-
+#globalHeader {
+  background-color: #f8f9fa; /* 设置一个浅灰色的背景色，营造简洁氛围 */
+  border-bottom: 1px solid #dee2e6; /* 添加底部边框，增强与下方内容的区分感 */
+}
 .titleBar {
   display: flex;
   align-items: center;
@@ -86,6 +92,8 @@ const doMenuClick = (key: string) => {
 }
 
 .logo {
+  width: 48px;
   height: 48px;
+  border-radius: 4px; /* 设置 4 像素的圆角 */
 }
 </style>
